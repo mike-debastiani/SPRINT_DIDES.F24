@@ -116,7 +116,7 @@ img.bg-image {
   }
 
   header {
-    padding: 3vh 5vw;
+    padding: 4vh 5vw;
     text-shadow: 0 0 2rem black;
     display: flex;
     justify-content: space-between;
@@ -139,6 +139,7 @@ img.bg-image {
   }
 
   #ep-title {
+    margin-top: -0.3rem;
     font-size: 1.2rem;
     max-width: fit-content;
   }
@@ -149,7 +150,7 @@ img.bg-image {
   }
 
   #author {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     font-size: 1rem;
     width: 55%;
   }
