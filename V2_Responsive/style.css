@@ -7,6 +7,11 @@
   color: white;
 }
 
+header.info {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1.5s ease; /* Smooth transition effect */
+}
+
 img-comparison-slider {
   visibility: hidden;
 }

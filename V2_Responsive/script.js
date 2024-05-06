@@ -368,3 +368,8 @@
         ));
     })();
 })();
+
+window.onload = function () {
+  var header = document.querySelector("header.info");
+  header.style.opacity = 1; // Show header with full opacity
+};
