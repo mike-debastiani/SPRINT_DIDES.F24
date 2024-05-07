@@ -5,12 +5,12 @@
   margin: 0;
   font-family: "Montserrat", sans-serif;
   color: white;
-  cursor: none;
 }
 
 body {
   height: 100svh;
   overflow: hidden;
+  cursor: none;
 }
 
 #instruction {
@@ -131,6 +131,7 @@ img.bg-image {
 @media only screen and (max-width: 400px) {
   body {
     height: 100svh;
+    cursor: auto;
   }
   .default-img {
     display: none;
