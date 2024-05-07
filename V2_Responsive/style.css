@@ -5,20 +5,19 @@
   margin: 0;
   font-family: "Montserrat", sans-serif;
   color: white;
+  cursor: none;
 }
 
 #instruction {
-  z-index: 1000;
+  display: none;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 1;
-  transition: opacity 1s ease-out;
-}
-
-#instruction.hidden {
-  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+  font-size: 1.2vw;
+  font-weight: 300;
+  font-style: italic;
+  text-shadow: 0 0 2rem black;
+  text-transform: uppercase;
 }
 
 header.info {

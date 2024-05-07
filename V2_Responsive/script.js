@@ -371,5 +371,16 @@
 
 window.onload = function () {
   var header = document.querySelector("header.info");
-  header.style.opacity = 1; // Show header with full opacity
+  header.style.opacity = 1;
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+  const instruction = document.getElementById("instruction");
+
+  document.addEventListener("mousemove", function (e) {
+    instruction.style.display = "block"; // Make the image visible
+    // Subtract half the width and height to center the image on the cursor
+    instruction.style.left = e.pageX - 32 + "px"; // Assuming the image is 32px wide
+    instruction.style.top = e.pageY - 32 + "px"; // Assuming the image is 32px high
+  });
+});
