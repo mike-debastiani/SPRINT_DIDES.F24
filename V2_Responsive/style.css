@@ -8,6 +8,11 @@
   cursor: none;
 }
 
+body {
+  height: 100svh;
+  overflow: hidden;
+}
+
 #instruction {
   display: none;
   position: fixed;
@@ -125,7 +130,7 @@ img.bg-image {
 
 @media only screen and (max-width: 400px) {
   body {
-    max-height: 100vh;
+    height: 100svh;
   }
   .default-img {
     display: none;
