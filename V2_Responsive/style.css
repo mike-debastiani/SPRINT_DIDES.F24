@@ -7,6 +7,20 @@
   color: white;
 }
 
+#instruction {
+  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+#instruction.hidden {
+  opacity: 0;
+}
+
 header.info {
   opacity: 0; /* Initially hidden */
   transition: opacity 1.5s ease; /* Smooth transition effect */
@@ -71,8 +85,7 @@ img.bg-image {
 #author {
   margin-top: 1.5vh;
   font-size: 1.5vw;
-  font-style: italic;
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: -0.015rem;
 }
 

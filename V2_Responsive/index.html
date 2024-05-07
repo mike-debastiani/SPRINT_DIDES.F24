@@ -20,6 +20,9 @@
         <div id="author">Directed by Joe Wright</div>
       </div>
     </header>
+    <div id="instruction">
+      <p>Hier steht der Anweisungstext.</p>
+    </div>
     <img-comparison-slider>
       <figure slot="first" class="before">
         <img class="bg-image default-img" src="img/Bg_Desktop-Slide-1.png" />
@@ -41,5 +44,15 @@
         </figcaption>
       </figure>
     </img-comparison-slider>
+    <script>
+      // JavaScript, um den Anweisungstext nach 5 Sekunden auszublenden
+      document.addEventListener("DOMContentLoaded", function () {
+        var instruction = document.getElementById("instruction");
+
+        setTimeout(function () {
+          instruction.classList.add("hidden");
+        }, 3000);
+      });
+    </script>
   </body>
 </html>
