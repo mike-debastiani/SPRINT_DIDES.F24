@@ -378,9 +378,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const instruction = document.getElementById("instruction");
 
   document.addEventListener("mousemove", function (e) {
-    instruction.style.display = "block"; // Make the image visible
-    // Subtract half the width and height to center the image on the cursor
-    instruction.style.left = e.pageX - 32 + "px"; // Assuming the image is 32px wide
-    instruction.style.top = e.pageY - 32 + "px"; // Assuming the image is 32px high
+    if (window.innerWidth > 768) {
+      // Assuming 768px als Breite für Desktop-Geräte
+      instruction.style.display = "block"; // Make the text visible
+      instruction.style.left = e.pageX + 10 + "px"; // Adjust positioning as needed
+      instruction.style.top = e.pageY + 10 + "px"; // Adjust positioning as needed
+    } else {
+      instruction.style.display = "none"; // Hide the text on smaller screens
+    }
   });
 });
