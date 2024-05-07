@@ -142,40 +142,35 @@ img.bg-image {
   }
 
   header {
-    padding: 4vh 5vw;
+    padding: 2.5vh 5vw;
     text-shadow: 0 0 2rem black;
     display: flex;
-    justify-content: space-between;
-  }
-
-  img.logo {
-    width: 40vw;
-    filter: drop-shadow(0 0 2rem black);
+    flex-direction: column;
+    width: 50vw;
+    right: 0;
   }
 
   img.bg-image {
     width: 100vw;
   }
 
-  #info {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20vw;
+  img.logo {
+    width: 37vw;
+    filter: drop-shadow(0 0 2rem black);
   }
 
   #ep-title {
-    margin-top: -0.3rem;
-    font-size: 4.8vw;
-    max-width: fit-content;
+    margin-top: 1.5rem;
+    font-size: 3.8vw;
   }
 
   #se-ep-title {
-    font-size: 4.8vw;
+    font-size: 3.8vw;
   }
 
   #author {
-    margin-top: 1rem;
-    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-size: 3.5vw;
   }
 
   .before figcaption {

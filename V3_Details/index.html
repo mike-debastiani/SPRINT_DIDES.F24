@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mike De Bastiani - DIDES Sprint</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="instruction">Swipe</div>
+    <header class="info">
+      <img
+        class="logo"
+        src="img/Black Mirror_Logo_white.svg"
+        alt="Black Mirror Logo"
+      />
+      <div id="info">
+        <div id="ep-title">Nosedive</div>
+        <div id="se-ep-title">Series 3, Episode 1</div>
+        <div id="author">Directed by Joe Wright</div>
+      </div>
+    </header>
+    <img-comparison-slider>
+      <figure slot="first" class="before">
+        <img class="bg-image default-img" src="img/Bg_Desktop-Slide-1.png" />
+        <img class="bg-image mobile-img" src="img/Bg_Mobile-Slide-1.png" />
+        <figcaption>
+          <img class="score" src="img/good-score.svg" alt="Good Score" />
+          <div class="quote">
+            “We’d need you<br />
+            around a 4.5.”
+          </div>
+        </figcaption>
+      </figure>
+      <figure slot="second" class="after">
+        <img class="bg-image default-img" src="img/Bg_Desktop-Slide-2.png" />
+        <img class="bg-image mobile-img" src="img/Bg_Mobile-Slide-2.png" />
+        <figcaption>
+          <img class="score" src="img/bad-score.svg" alt="Bad Score" />
+          <div class="quote">“She’s, a<br />fucking 1.1.”</div>
+        </figcaption>
+      </figure>
+    </img-comparison-slider>
+  </body>
+</html>
