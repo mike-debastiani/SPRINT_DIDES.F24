@@ -378,7 +378,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const instruction = document.getElementById("instruction");
 
   document.addEventListener("mousemove", function (e) {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 500) {
       // Assuming 768px als Breite für Desktop-Geräte
       instruction.style.display = "block"; // Make the text visible
       instruction.style.left = e.pageX + 10 + "px"; // Adjust positioning as needed
