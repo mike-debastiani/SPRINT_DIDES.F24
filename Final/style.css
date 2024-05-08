@@ -96,7 +96,7 @@ img.bg-image {
 .before figcaption,
 .after figcaption {
   position: absolute;
-  top: 55%;
+  top: 60%;
   transform: translateY(-50%);
 }
 
